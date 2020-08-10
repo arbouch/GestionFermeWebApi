@@ -4,14 +4,16 @@ using GestionFermeWebApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GestionFermeWebApi.Migrations
 {
     [DbContext(typeof(GestionFermeConetxt))]
-    partial class GestionFermeConetxtModelSnapshot : ModelSnapshot
+    [Migration("20200810225129_vet")]
+    partial class vet
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,24 +56,6 @@ namespace GestionFermeWebApi.Migrations
                     b.HasKey("FermeId");
 
                     b.ToTable("Ferme");
-                });
-
-            modelBuilder.Entity("GestionFermeWebApi.Models.RACE", b =>
-                {
-                    b.Property<int>("idRace")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Designation")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("idRace");
-
-                    b.ToTable("race");
                 });
 
             modelBuilder.Entity("GestionFermeWebApi.Models.VETERINAIRE", b =>

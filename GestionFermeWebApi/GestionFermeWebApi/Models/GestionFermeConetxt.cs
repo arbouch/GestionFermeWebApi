@@ -14,5 +14,7 @@ namespace GestionFermeWebApi.Models
 
         }
         public DbSet<GestionFermeWebApi.Models.Ferme> Ferme { get; set; }
+        public DbSet<GestionFermeWebApi.Models.VETERINAIRE> VETERINAIRE { get; set; }
+        public DbSet<GestionFermeWebApi.Models.RACE> RACE { get; set; }
      }
 }
