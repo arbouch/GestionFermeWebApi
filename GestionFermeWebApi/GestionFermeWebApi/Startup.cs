@@ -48,7 +48,7 @@ namespace GestionFermeWebApi
             }
 
             app.UseRouting();
-            app.UseCors(options => options.WithOrigins("http://localhost:61347").AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader());
             app.UseRouting();
             app.UseAuthorization();
 
