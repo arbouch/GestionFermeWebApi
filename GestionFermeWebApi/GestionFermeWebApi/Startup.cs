@@ -28,10 +28,13 @@ namespace GestionFermeWebApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                .AddJsonOptions(options => {
+                   options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                   options.JsonSerializerOptions.PropertyNamingPolicy = null;
 
-                    // var resorver = options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
-                    var resorver = options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                   // var resorver = options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                   var resorver = options.JsonSerializerOptions.PropertyNamingPolicy = null;
                });
+
             services.AddControllers();
           services.AddDbContext<GestionFermeConetxt>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
