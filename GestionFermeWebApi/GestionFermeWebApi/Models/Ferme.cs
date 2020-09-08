@@ -16,8 +16,8 @@ namespace GestionFermeWebApi.Models
         public string numTelProp { get; set; }
         public string gouveroratFerme { get; set; }
         public string delegation { get; set; }
-        public DateTime dateAdhesion { get; set; }
-        [MaxLength(50)] 
+        public string dateAdhesion { get; set; }
+      
         public int cinPopr { get; set; }
     }
 }

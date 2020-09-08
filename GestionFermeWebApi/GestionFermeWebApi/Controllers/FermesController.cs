@@ -41,8 +41,6 @@ namespace GestionFermeWebApi.Controllers
             return ferme;
         }
 
- 
-
         // PUT: api/Fermes/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -107,21 +105,5 @@ namespace GestionFermeWebApi.Controllers
         {
             return _context.Ferme.Any(e => e.FermeId == id);
         }
-
-
-
-
-        [Route("ferme/[controller]")]
-      
-        // GET: api/Fermes/arbi
-        [HttpGet("{nom}")]
-        public async Task<ActionResult<Ferme>> GetFermeParNom(string nom)
-        {
-            var ferme = await _context.Ferme.FindAsync(nom);
-
-
-            return  ferme;
-        }
-
     }
 }

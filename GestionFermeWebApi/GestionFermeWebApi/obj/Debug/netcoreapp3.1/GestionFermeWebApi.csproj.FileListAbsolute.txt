@@ -48,7 +48,6 @@ D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\bi
 D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\obj\Debug\netcoreapp3.1\GestionFermeWebApi.dll
 D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\obj\Debug\netcoreapp3.1\GestionFermeWebApi.pdb
 D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\obj\Debug\netcoreapp3.1\GestionFermeWebApi.genruntimeconfig.cache
-D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\obj\Debug\netcoreapp3.1\GestionFermeWebApi.csprojAssemblyReference.cache
 D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 D:\.net\source\repos\GestionFermeWebApi\GestionFermeWebApi\GestionFermeWebApi\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
